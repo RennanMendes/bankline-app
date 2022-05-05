@@ -8,13 +8,13 @@ import { CorrentistaService } from 'src/app/services/correntista.service';
   styleUrls: ['./correntista.component.css']
 })
 export class CorrentistaComponent implements OnInit {
-  correntistas:any;
-  cpf:any;
-  nome:any;
+  correntistas: any;
+  cpf: any;
+  nome: any;
 
   constructor(
     private correntistaService: CorrentistaService,
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     this.exibirCorrentistas();
@@ -33,12 +33,16 @@ export class CorrentistaComponent implements OnInit {
   }
 
   save(): void {
+
     const correntista = {
-      cpf:this.cpf,
-      nome:this.nome
+      cpf: this.cpf,
+      nome: this.nome
     };
+
     console.log(correntista);
+
     this.correntistaService.create(correntista)
+
       .subscribe(
         response => {
           console.log(response);
@@ -47,5 +51,12 @@ export class CorrentistaComponent implements OnInit {
         error => {
           console.log(error);
         });
+
+    alert('Correntista cadastrado com sucesso!')
+
+    this.cpf = null;
+    this.nome = null;
+
+
   }
 }

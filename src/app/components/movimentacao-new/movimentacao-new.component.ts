@@ -8,19 +8,19 @@ import { MovimentacaoService } from 'src/app/services/movimentacao.service';
   styleUrls: ['./movimentacao-new.component.css']
 })
 export class MovimentacaoNewComponent implements OnInit {
-  correntistas:any;
-  correntista:any
+  correntistas: any;
+  correntista: any
 
-  dataHora:any;
+  dataHora: any;
   descricao: any;
   valor: any;
   tipo: any;
-  
+
 
   constructor(
     private movimentacaoService: MovimentacaoService,
     private correntistaService: CorrentistaService,
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     this.exibirCorrentistas();
@@ -40,11 +40,11 @@ export class MovimentacaoNewComponent implements OnInit {
   save(): void {
     console.log(this.correntista)
     const movimentacao = {
-      valor:this.valor,
-      descricao:this.descricao,
-      tipo:this.tipo,
-      idConta:this.correntista.id,
-      dataHora:this.dataHora
+      valor: this.valor,
+      descricao: this.descricao,
+      tipo: this.tipo,
+      idConta: this.correntista.id,
+      dataHora: this.dataHora
 
     };
     console.log(movimentacao);
@@ -56,6 +56,12 @@ export class MovimentacaoNewComponent implements OnInit {
         error => {
           console.log(error);
         });
+
+    alert('Movimentação realizada com sucesso!')
+
+    this.valor = null;
+    this.descricao = null;
+    this.tipo = null;
   }
 
 }

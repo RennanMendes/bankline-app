@@ -1,27 +1,60 @@
-# BanklineApp
+<h1 align="center">SANTANDER DEV WEEK</h1>
+<h2 align="center">Front-end </h2>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
+</br>
 
-## Development server
+<p align="center">
+• <a href="#Objetivo">Objetivo</a>
+ • <a href="#Preparação">Preparação</a> 
+ • <a href="#Tecnologias">Tecnologias</a>
+ • <a href="#Funcionalidades-do-projeto">Funcionalidades</a>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Objetivo 
+Criar uma interface visual e de fácil utilização para consumir uma API de domínio bancário capaz de cadastrar novos usuários e acompanhar suas movimentações financeiras.
 
-## Code scaffolding
+</br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Preparação
 
-## Build
+Será necessario ter o [bankline-api](https://github.com/RennanMendes/bankline-api) baixado e em execução no seu computador durante a utilização desta solução.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Além disto você precisara de uma IDE, como por exemplo o [Visual Studio Code](https://code.visualstudio.com/).
 
-## Running unit tests
+</br>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Tecnologias
 
-## Running end-to-end tests
+Foram utilizadas as seguintes tecnologias:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- <b>Angular</b>
+- <b>HTML5</b>
+- <b>CSS3</b>
+- <b>JavaScript</b>
+- <b>TypeScript</b>
+- <b>NodeJS</b>
+- <b>VScode</b>
 
-## Further help
+</br>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+##  Funcionalidades do projeto
+
+#### Exibe as movimentações feitas por cada usuário
+
+</br>
+
+<img src="./assets/img/Movimentacoes.png" width="100%"/>
+
+
+#### Cadastra novos usuário
+
+</br>
+
+<img src="./assets/img/Correntistas.png" width="100%"/>
+
+
+#### Realiza novas movimentações
+
+</br>
+
+<img src="./assets/img/NovaMovimentacao.png" width="100%"/>

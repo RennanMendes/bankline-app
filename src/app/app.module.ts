@@ -34,7 +34,7 @@ registerLocaleData(localePt);
     HttpClientModule,
     CurrencyMaskModule
   ],
-  providers: [{provide: LOCALE_ID, useValue: 'pt-BR'}],
+  providers: [{ provide: LOCALE_ID, useValue: 'pt-BR' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

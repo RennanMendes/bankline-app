@@ -8,14 +8,14 @@ import { MovimentacaoService } from 'src/app/services/movimentacao.service';
   styleUrls: ['./movimentacao-list.component.css']
 })
 export class MovimentacaoListComponent implements OnInit {
-  movimentacoes:any;
+  movimentacoes: any;
   correntistas: any;
-  correntista: any={};
+  correntista: any = {};
 
   constructor(
     private movimentacaoService: MovimentacaoService,
     private correntistaService: CorrentistaService
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     this.exibirCorrentistas();
